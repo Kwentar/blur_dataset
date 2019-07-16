@@ -8,7 +8,7 @@ The dataset was created for blur detection validation. But it can be used for im
 
 The dataset contain three folder: sharp, defocus and movement blur images
 
-The filename name structure is next: <id>_<device>_<type>.<extension>.
+The filename name structure is next: id_device_type.extension
  - ID - the number from 0 to 349
  - device - the photo source device
  - type - one of [S, F, M]. S means sharp image, F - defocused image and M - motion blur image.
