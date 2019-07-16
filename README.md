@@ -6,19 +6,19 @@ The dataset was created to validate the blur detection algorithm. The dataset ca
 
 ## Dataset structure
 
-The dataset contain three folder: sharp, defocus and movement blur images
+The dataset contains three folders: sharp, defocused and motion blurred images.
 
-The filename name structure is next: id_device_type.extension
- - ID - the number from 0 to 349
- - device - the photo source device
- - type - one of [S, F, M]. S means sharp image, F - defocused image and M - motion blur image.
+The filename structure is as follows: id_device_type.extension
+ - ID - a number from 0 to 349;
+ - device - the photo source device;
+ - type - one of [S, F, M]. S stands for Sharp image, F - deFocused image and M - Motion blurred image.
           
-The dataset contains N devices, usually it is smartphones, but there are several cameras.
+The dataset contains N devices, those are typically smartphones, but several cameras are also present.
 
 ## Download
-Kaggle dataset (resized to 1024 for biggest side): todo
+Kaggle dataset (images scale the widest side to 1024 pixels): todo
 
-Google drive (source): todo
+Google drive (source images): todo
 
 ## Images samples
 
