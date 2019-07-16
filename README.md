@@ -2,7 +2,7 @@
 ## Description
 This dataset contains 1050 blurred and sharp images (350 triplets), each image triplet is a set of three photos of the same scene: sharp, defocused-blurred and motion-blurred images.
 
-The dataset was created to validate the blur detection algorithm. It can also be used for image deblurring tests, hovewer, they are not "pixel-to-pixel" images, so, one cannot compare blurred with sharp images on the basis of PSNR or SSIM, but sharm images can be used for visual comparison.
+The dataset was created to validate the blur detection algorithm. The dataset can also be used for testing image deblurring, hovewer, the triplets are not "pixel-to-pixel" images, so, one cannot compare blurred and sharp images on the basis of PSNR or SSIM but sharp images can be used for visual comparison.
 
 ## Dataset structure
 
