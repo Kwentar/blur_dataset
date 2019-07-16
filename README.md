@@ -16,9 +16,9 @@ The filename name structure is next: <id>_<device>_<type>.<extension>.
 The dataset contains N devices, usually it is smartphones, but there are several cameras.
 
 ## Download
-Kaggle dataset: todo
+Kaggle dataset (resized to 1024 for biggest side): todo
 
-Google drive: todo
+Google drive (source): todo
 
 ## Images samples
 
