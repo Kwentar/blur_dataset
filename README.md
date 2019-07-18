@@ -17,6 +17,7 @@ The dataset contains 70 devices, these are typically smartphones, but several ca
 <details> 
 <summary>Devices list:</summary>
 <p> 
+
 |Device     | Amount|
 |-----------|-------|
 |HONOR-7X	| 34	|
