@@ -46,7 +46,7 @@ def check_devices(*args):
     cnt = Counter(lists[-1])
     dev = []
     for item in cnt.most_common(100):
-        print(f'{item[0]}: {item[1]}')
+        print(f'|{item[0]}\t| {item[1]}\t|')
         dev.append(item[0])
     for item in sorted(dev):
         print(item)
