@@ -11,7 +11,7 @@ The dataset contains three folders: sharp, defocused-blurred and motion-blurred 
 The filename structure is as follows: id_device_type.extension where
  - ID - a number from 0 to 349;
  - device - the image capture device;
- - type - one of [S, F, M]. S stands for Sharp image, F - deFocused-blurredimage and M - Motion-blurred image.
+ - type - one of [S, F, M]. S stands for Sharp image, F - deFocused-blurred image and M - Motion-blurred image.
           
 The dataset contains 66 devices, these are typically smartphones, but several cameras are also provided.
 <details> 
