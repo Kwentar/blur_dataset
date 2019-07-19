@@ -90,7 +90,7 @@ The dataset contains 66 devices, these are typically smartphones, but several ca
 </details>
 
 ## Download
-Kaggle dataset (images were scaled to 1024 pixels by the widest side): will be soon
+Kaggle dataset (images were scaled to 2048 pixels by the widest side): will be soon
 
 Google drive (source images): will be soon
 
