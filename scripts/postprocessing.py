@@ -176,12 +176,7 @@ def fix_id(src_folder,
         sharp_image_old = os.path.join(src_folder, sharp_folder, f'{key}_{item[0]}')
         defocused_image_old = os.path.join(src_folder, defocused_folder, f'{key}_{item[1]}')
         motion_image_old = os.path.join(src_folder, motion_folder, f'{key}_{item[2]}')
-        print(sharp_image_new)
-        print(defocused_image_new)
-        print(motion_image_new)
-        print(sharp_image_old)
-        print(defocused_image_old)
-        print(motion_image_old)
+
         shutil.move(sharp_image_old, sharp_image_new)
         shutil.move(defocused_image_old, defocused_image_new)
         shutil.move(motion_image_old, motion_image_new)
@@ -215,7 +210,7 @@ def check_sizes(src_folder,
 
 def scale_base_to(src_folder,
                   dst_folder,
-                  dst_size=1024,
+                  dst_size=2048,
                   sharp_folder='sharp',
                   defocused_folder='defocused_blurred',
                   motion_folder='motion_blurred'):
@@ -249,10 +244,11 @@ if __name__ == '__main__':
     #           48, 87, 88, 94, 97, 104, 110, 128, 136, 139,  143, 170, 175, 205,
     #           218, 255, 298, 301, 306, 317, 335, 347, 379, 206, 222, 234, 295, 296, 309]
     #
+    # bad_id = [10, 13, 18, 102, 144, 185, 205, 211, 244, 277, 282, 304, 322]
     # move_bad_ids(r'G:\_datasets\blur_dataset', r'G:\_datasets\blur_dataset_tmp', bad_id)
     # parse_folder(r'G:\_datasets\blur_dataset')
     # fix_id(r'G:\_datasets\blur_dataset', r'G:\_datasets\blur_dataset_fix_id')
-    check_sizes(r'G:\_datasets\blur_dataset')
-    scale_base_to(r'G:\_datasets\blur_dataset', r'G:\_datasets\blur_dataset_scaled')
+    check_sizes(r'G:\_datasets\blur_dataset_fix_id')
+    scale_base_to(r'G:\_datasets\blur_dataset_fix_id', r'G:\_datasets\blur_dataset_scaled')
 
 

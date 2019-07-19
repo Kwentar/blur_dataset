@@ -13,31 +13,31 @@ The filename structure is as follows: id_device_type.extension where
  - device - the image capture device;
  - type - one of [S, F, M]. S stands for Sharp image, F - deFocused-blurredimage and M - Motion-blurred image.
           
-The dataset contains 70 devices, these are typically smartphones, but several cameras are also provided.
+The dataset contains 66 devices, these are typically smartphones, but several cameras are also provided.
 <details> 
-<summary>Devices list:</summary>
+<summary>List of devices:</summary>
 <p> 
 
 |Device     | Amount|
 |-----------|-------|
-|HONOR-7X	| 34	|
-|HONOR-8X	| 33	|
+|HONOR-7X	| 37	|
+|NIKON-D3400-18-55MM	| 37	|
+|HONOR-8X	| 30	|
 |IPHONE-SE	| 30	|
 |NIKON-D3400-35MM	| 25	|
 |XIAOMI-PROCOFONE-F1	| 23	|
-|NIKON-D3400-18-55MM	| 21	|
 |IPHONE-7	| 13	|
-|IPHONE-6S	| 12	|
+|IPHONE-6S	| 11	|
 |XIAOMI-MI8-SE	| 9	|
-|SAMSUNG-GALAXY-J3	| 7	|
+|HONOR-10	| 8	|
 |ASUS-ZENFONE-LIVE-ZB501KL	| 6	|
 |HONOR-7C	| 6	|
 |HUAWEI-P20-LITE	| 6	|
 |SONY-NEX-5T	| 6	|
-|HONOR-10	| 5	|
+|XIAOMI-REDMI-7	| 6	|
 |HUAWEI-P20	| 5	|
 |IPHONE-8-PLUS	| 5	|
-|XIAOMI-REDMI-7	| 5	|
+|SAMSUNG-GALAXY-J3	| 5	|
 |HUAWEI-MATE20	| 4	|
 |HUAWEI-Y9	| 4	|
 |IPHONE-8	| 4	|
@@ -50,6 +50,7 @@ The dataset contains 70 devices, these are typically smartphones, but several ca
 |WILEYFOX-SWIFT-2-PLUS	| 3	|
 |XIAOMI-REDMI-3S	| 3	|
 |XIAOMI-REDMI-NOTE-7	| 3	|
+|HONOR-6X	| 2	|
 |HUAWEI-P30-PRO	| 2	|
 |ONEPLUS-3T	| 2	|
 |SAMSUNG-GALAXY-A5	| 2	|
@@ -60,9 +61,8 @@ The dataset contains 70 devices, these are typically smartphones, but several ca
 |BQ-5512L	| 1	|
 |CANON-6D-70-200MM	| 1	|
 |HONOR-4C	| 1	|
-|HONOR-6X	| 1	|
+|HONOR-8	| 1	|
 |HONOR-9-LITE	| 1	|
-|HUAWEI-ATH	| 1	|
 |HUAWEI-P-SMART	| 1	|
 |HUAWEI-P30	| 1	|
 |HUAWEI-P30-LITE	| 1	|
@@ -70,51 +70,41 @@ The dataset contains 70 devices, these are typically smartphones, but several ca
 |IPHONE-6	| 1	|
 |IPHONE-XR	| 1	|
 |LG-Q6	| 1	|
-|MEIZU-M2-NOTE	| 1	|
-|MEIZU-M3S-MINI	| 1	|
 |NOKIA-21	| 1	|
 |PANASONIC-DMC-TZ35	| 1	|
 |PRESTIGIO-MULTI-PHONE	| 1	|
 |SAMSUNG-EDGE-7C	| 1	|
 |SAMSUNG-GALAXY-7-NEO	| 1	|
 |SAMSUNG-GALAXY-A3	| 1	|
-|SAMSUNG-GALAXY-A8-PLUS	| 1	|
 |SAMSUNG-GALAXY-GRAND-PRIME	| 1	|
 |SAMSUNG-GALAXY-GRAND-PRIME-PLUS	| 1	|
 |SAMSUNG-GALAXY-S5	| 1	|
 |SONY-XPERIA-E5	| 1	|
 |XIAOMI-MI8-LITE	| 1	|
-|XIAOMI-MI8-PRO	| 1	|
 |XIAOMI-REDMI-4	| 1	|
+|XIAOMI-REDMI-4A	| 1	|
 |XIAOMI-REDMI-4X	| 1	|
-|XIAOMI-REDMI-NOTE-2	| 1	|
 |XIAOMI-REDMI-NOTE-4X	| 1	|
 |XIAOMI-REDMI-NOTE-5A-PRIME	| 1	|
 </p> 
 </details>
 
 ## Download
-Kaggle dataset (images were scaled to 1024 pixels by the widest side): todo
+Kaggle dataset (images were scaled to 1024 pixels by the widest side): will be soon
 
-Google drive (source images): todo
+Google drive (source images): will be soon
 
-## Images samples
+## Samples
+
+|Sharp     | Defocused-blurred | Motion-blurred |
+|-----------|-------|-------|
+|![106 Sharp](samples/106_NIKON-D3400-35MM_S.JPG)| ![106 Defocused](samples/106_NIKON-D3400-35MM_F.JPG)| ![106 Motion](samples/106_NIKON-D3400-35MM_M.JPG)|
+|![176 Sharp](samples/176_HONOR-7X_S.JPG)| ![176 Defocused](samples/176_HONOR-7X_F.JPG)| ![176 Motion](samples/176_HONOR-7X_M.JPG)|
+|![180 Sharp](samples/180_HONOR-10_S.JPG)| ![180 Defocused](samples/180_HONOR-10_F.JPG)| ![180 Motion](samples/180_HONOR-10_M.JPG)|
 
 ## Licence
-todo
+will be soon
 
 ## How to cite
-todo
-
-
-Данная база представляет собой 1050 изображений (350 троек), каждая тройка изображений - это фото одной и той же сцены: чёткое фото, расфокусированное изображение и смазанное в движении.
-
-База создана для проверки алгоритма детектирования блюра на изображении. Также можно использовать для тестов деблюра изображений, однако, это не пиксель в пиксель изображения, поэтому вы не можете использовать сравнение с помощью psnr, ssim и тд, но можно использовать для визуального анализа.
-
-В базе три папки соответственно с чёткими, расфокусированными и смазанными в движении изображениями.
-
-Структура имени файла следующая: ид_девайс_тип. ID - число от 0 до 349, девайс - устройство, которым сделан снимок, тип - дублирующая информация, одно из трех - S sharp, F defocus, M movement blur.
-
-В базе представлены N устройств, в основном, это смартфоны, но есть и фото с фотоаппаратов
-
+will be soon
 
