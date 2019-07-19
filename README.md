@@ -90,7 +90,7 @@ The dataset contains 66 devices, these are typically smartphones, but several ca
 </details>
 
 ## Download
-Kaggle dataset (images were scaled to 2048 pixels by the widest side): will be soon
+Kaggle dataset (images were scaled to 2048 pixels by the widest side): https://www.kaggle.com/kwentar/blur-dataset
 
 Google drive (source images): will be soon
 
