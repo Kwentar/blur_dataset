@@ -105,7 +105,7 @@ Mirror: https://yadi.sk/d/_Wli3wSSScnzCg
 |![180 Sharp](samples/180_HONOR-10_S.jpg)| ![180 Defocused](samples/180_HONOR-10_F.jpg)| ![180 Motion](samples/180_HONOR-10_M.jpg)|
 
 ## Licence
-will be soon
+CC0: Public Domain
 
 ## How to cite
 will be soon
